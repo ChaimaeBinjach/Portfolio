@@ -1,0 +1,32 @@
+.skills {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 40px 20px; /* Increased padding for better spacing */
+}
+
+.cards-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusted grid column width */
+    grid-gap: 20px; /* Increased grid gap */
+    padding: 20px; /* Added padding */
+}
+
+.card {
+    background-color: #ffffff; /* White background */
+    padding: 20px; /* Increased padding */
+    cursor: pointer;
+    border-radius: 15px; /* Slightly rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift card slightly on hover */
+}
+
+.img-card {
+    height: 100px; /* Reduced image height */
+    width: 100px; /* Reduced image width */
+    object-fit: cover; /* Ensure images maintain aspect ratio */
+    border-radius: 50%; /* Circular image */
+    margin: 0 auto 15px; /* Center image horizontally and add bottom margin */
+}

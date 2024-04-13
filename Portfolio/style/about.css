@@ -1,0 +1,115 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Fonts */
+h1, h2, h3, p {
+    font-family: 'Roboto Mono', monospace;
+    color: #333; /* Adjusted text color for better readability */
+}
+
+/* Sections */
+.section-style {
+    background-color: #f4f4f4; /* Soft grey background */
+    padding: 40px 15px 50px; /* Adjusted padding for better spacing */
+    color: #333; /* Adjusted text color for better contrast */
+}
+
+.section-title {
+    font-size: 36px; /* Medium header size */
+    padding-top: 40px;
+    margin-bottom: 20px; /* Adjusted margin for better spacing */
+    text-align: center; /* Centered text */
+    color: #6c5ce7; /* Vibrant purple color for the title */
+}
+
+.description {
+    font-size: 18px; /* Decreased font size for better readability */
+    padding-bottom: 15px;
+    margin: 0 auto; /* Centered the description */
+    max-width: 80%; /* Limited width for better readability on large screens */
+}
+
+/* View CV Button */
+.buttons {
+    display: flex;
+    justify-content: center; /* Centered horizontally */
+    margin-top: 20px;
+}
+
+.container-btn {
+    padding: 1em;
+}
+
+.btn-cv {
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 45px;
+    margin: 0 0 2em;
+    width: 200px; /* Increased button width */
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center; /* Centered text */
+    background: linear-gradient(135deg, #8e44ad, #6c5ce7); /* Gradient background */
+    border-radius: 5px; /* Rounded corners */
+    border: none; /* Removed border */
+    transition: background 0.3s ease; /* Smooth transition */
+}
+.btn-cv:hover { 
+    text-decoration: none; 
+    background: linear-gradient(135deg, #6c5ce7, #8e44ad); /* Darker gradient on hover */
+}
+
+.btn-1 {
+    font-weight: 100;
+    position: relative;
+}
+
+.btn-1 svg {
+    height: 45px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.btn-1 rect {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+    transition: all 0.35s linear;
+}
+
+.btn-1:hover {
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.btn-1:hover rect {
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* Header */
+.header {
+    text-align: center; /* Centered text */
+    margin-top: 50px; /* Adjusted margin for better spacing */
+    color: #8e44ad; /* Slightly lighter purple color for the header */
+}

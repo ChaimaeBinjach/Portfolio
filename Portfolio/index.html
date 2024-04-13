@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chaimae</title>
+
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="style/top.css" type="text/css" rel="stylesheet" />
+    <link href="style/effects.css" type="text/css" rel="stylesheet" />
+    <link href="style/skills.css" type="text/css" rel="stylesheet" />
+    <link href="style/about.css" type="text/css" rel="stylesheet" />
+    <link href="style/footer.css" type="text/css" rel="stylesheet" />
+    <link href="style/projects.css" type="text/css" rel="stylesheet" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👩🏻‍💻</text></svg>"
+    />
+
+    <!-- JavaScript Module -->
+    <script type="module" src="js/renderTemplate.js"></script>
+  </head>
+
+  <body>
+    <!-- Top Section -->
+    <div id="top">
+      <div class="header">
+        <!-- Header Presentation -->
+        <h1 class="header-apresentation"></h1>
+
+        <!-- Header Icons -->
+        <div class="header-icons"></div>
+
+        <!-- Navigation Links -->
+        <nav class="nav"></nav>
+      </div>
+
+      <!-- Scroll Down Button -->
+      <a class="icon bounce gradient fade" id="down" href="#about" data-scroll>
+        <i class="fa fa-chevron-down"></i>
+      </a>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="section-style" data-aos="fade-up">
+      <div class="container">
+        <!-- About Title -->
+        <h2 class="section-title">About Me</h2>
+
+        <!-- About Content -->
+        <div class="about-content">
+          <!-- Content goes here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills" data-aos="zoom-in">
+      <div class="container">
+        <!-- Skills Title -->
+        <h2 class="section-title">Skills</h2>
+
+        <!-- Skills Content -->
+        <div class="cards-main">
+          <!-- Content goes here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="container">
+        <!-- Projects Title -->
+        <h2 class="section-title">Projects</h2>
+
+        <!-- Projects Content -->
+        <div class="projects-main">
+          <!-- Content goes here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <a
+      title="Go to top"
+      class="icon gradient fade"
+      style="visibility: hidden"
+      id="top-button"
+      onclick="topFunction()"
+    >
+      <i class="fa fa-angle-double-up"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer container">
+      <hr />
+      <b>
+        <p>© 2024</p>
+        <p><a class="fade" href="#">Chaimae</a></p>
+      </b>
+    </footer>
+
+    <!-- Animation On Scroll Library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- JavaScript for Scroll Functionality -->
+    <script>
+      var topButton = document.getElementById("top-button");
+
+      document.addEventListener("scroll", scrollFunction);
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          topButton.style.visibility = "visible";
+        } else {
+          topButton.style.visibility = "hidden";
+        }
+      }
+
+      function topFunction() {
+        document.documentElement.scrollTop = 0;
+      }
+
+      // Initialize Animation On Scroll
+      AOS.init({
+        offset: 250,
+        duration: 1000,
+        once: true,
+      });
+    </script>
+  </body>
+</html>

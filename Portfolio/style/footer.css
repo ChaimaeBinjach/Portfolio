@@ -1,0 +1,21 @@
+.footer {
+    padding: 20px 0; /* Increased padding for better spacing */
+    margin-top: 50px; /* Reduced margin-top for better positioning */
+    text-align: center; /* Center align text */
+}
+
+.footer .love {
+    color: #ff4500; /* Changed love color to orange-red */
+    font-weight: bold; /* Added font-weight for better visibility */
+}
+
+.footer a {
+    text-decoration: underline; /* Underline links */
+    color: #333; /* Darkened link color */
+}
+
+.footer hr {
+    margin: 20px auto; /* Center align hr and adjusted margin */
+    width: 50%; /* Reduced hr width for better proportion */
+    border-color: #ccc; /* Changed hr color to light gray */
+}

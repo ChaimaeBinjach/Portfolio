@@ -1,0 +1,107 @@
+.project {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 20px;
+  grid-gap: 20px;
+  background-color: #f5f5f5; /* Light gray background */
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.project-informations {
+  text-align: center;
+}
+
+.project-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 20px;
+  background-color: #43B7B8; /* Light blue background */
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.project-button:hover {
+  background-color: #329192; /* Darker blue on hover */
+}
+
+.project-img img {
+  display: block;
+  width: 100%;
+  max-height: 200px; /* Adjusted maximum height */
+  object-fit: cover; /* Ensure images maintain aspect ratio */
+  border-radius: 15px;
+  margin: 0 auto; /* Center images horizontally */
+}
+
+.project-informations h3 {
+  margin: 10px 0;
+  font-size: 20px; /* Reduced font size */
+  color: #333333; /* Dark gray text */
+}
+
+.project-informations p {
+  font-size: 16px; /* Reduced font size */
+  margin-bottom: 10px;
+  color: #666666; /* Medium gray text */
+}
+
+.wrapper {
+  margin-bottom: 50px; /* Reduced margin bottom */
+  position: relative;
+}
+
+.link_wrapper a {
+  display: block;
+  width: 180px; /* Reduced width */
+  height: 40px;
+  line-height: 40px;
+  font-weight: bold;
+  text-decoration: none;
+  background: #ffffff; /* White background */
+  text-align: center;
+  color: #333333; /* Dark gray text */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 2px solid #333333; /* Dark gray border */
+  border-radius: 20px;
+  transition: all 0.35s;
+}
+
+.project-icon {
+  width: 30px; /* Reduced width */
+  height: 30px; /* Reduced height */
+  border: 2px solid transparent;
+  position: absolute;
+  transform: rotate(45deg);
+  right: 0;
+  bottom: 10px; /* Adjusted positioning */
+  left: 0;
+  margin: 0 auto; /* Center icon horizontally */
+  z-index: -1;
+  transition: all 0.35s;
+}
+
+.project-icon svg {
+  width: 20px; /* Reduced width */
+  position: absolute;
+  top: calc(50% - 10px); /* Adjusted positioning */
+  left: calc(50% - 10px); /* Adjusted positioning */
+  transform: rotate(-45deg);
+  fill: #333333; /* Dark gray fill */
+  transition: all 0.35s;
+}
+
+.link_wrapper a:hover {
+  border: 2px solid #329192; /* Darker blue border on hover */
+  color: #329192; /* Darker blue text on hover */
+}
+
+.link_wrapper a:hover + .project-icon {
+  border: 2px solid #329192; /* Darker blue border on hover */
+}

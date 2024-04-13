@@ -1,0 +1,111 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; /* Changed font family for better readability */
+}
+
+#top {
+    background-color: #fff;
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    vertical-align: bottom;
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header {
+    text-align: center;
+    color: #272341;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.nav {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+h1 {
+    font-size: 48px; /* Increased font size for better emphasis */
+    margin-bottom: 20px; /* Added margin bottom for spacing */
+    color: #8929ad; /* Different color for h1 */
+}
+
+h2 {
+    font-size: 36px; /* Adjusted font size */
+    color: #43b7b8; /* Different color for h2 */
+    margin-top: 50px; /* Added margin top to center h2 */
+}
+
+
+
+/* Other styles remain the same */
+
+
+.btn {
+    color: #333;
+    line-height: 1.6rem;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 1rem;
+    border: 2px solid #333; /* Added border for better button visibility */
+    padding: 10px 20px; /* Added padding for better button size */
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.btn:hover {
+    background-color: #333; /* Dark background on hover */
+    color: #fff; /* Light text color on hover */
+}
+
+.header-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.icon {
+    font-size: 30px; /* Increased icon size */
+    padding: 15px; /* Increased padding around icons */
+    margin: 0 auto;
+    text-rendering: optimizeLegibility;
+}
+
+#down {
+    font-size: 40px !important;
+    margin-top: 90vh;
+    z-index: 5;
+}
+
+#top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 10;
+    background-color: #333; /* Dark button background */
+    color: #fff; /* Light button text color */
+    border: none;
+    border-radius: 50%; /* Circular button */
+    width: 50px; /* Adjusted button width */
+    height: 50px; /* Adjusted button height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px; /* Adjusted font size */
+}
+
+#top-button:hover {
+    background-color: #555; /* Darker background on hover */
+}
